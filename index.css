@@ -20,17 +20,26 @@ h3 {
 }
 
 h4 {
-  text-decoration: underline;
-  text-decoration-color: #ECC253;
-  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center !important;
+  font-family: 'Nanum Gothic', sans-serif !important;
+  color: #1C5D99 !important;
+  margin-bottom: 20px !important;
 }
 
 p {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+.phone {
+  text-align: center !important;
+  font-family: 'Nanum Gothic', sans-serif !important;
+  color: #1C5D99 !important;
+  margin-bottom: 20px !important;
+  font-size: 1em;
+}
+
 .App-nav {
-  background: rgba(249, 249, 249) !important;
+  background: #ffffff; !important;
   height: 70px;
   top: 0;
   right: 0;
@@ -60,7 +69,7 @@ p {
     }
 
     li a:hover {
-      background-color: #f9f9f9;
+     
       text-decoration: none;
       color: #FFB916 !important;
       height: 70px;
@@ -69,25 +78,25 @@ p {
     .App-logo {
       height: 70px;
       padding: 5px;
-      margin-left:80px;
+      float:left;
     }
 
-    /*.App-title {
-      font-size: 2em;
-      color: #0095a8;
+    .App-title {
+      font-size: 1.5em;
+      color: #FFB916;
       float: left;
       padding: 15px 10px;
-    }*/
+      margin-left: 13%;
+    }
 
 .App-header {
-  background: url(./img/orlando_stock_image2.jpg) center no-repeat;
+  background: url(./img/demoscreens.png) center no-repeat;
   height: 580px;
-  width: 100%;
   color: #2C3E50;
   margin-top: 5.5%;
 }
     
-   .overlay {
+   /*.overlay {
       position: absolute;
       top:0;
       left:0;
@@ -95,7 +104,7 @@ p {
       height:100%;
       display: block;
       background-color: rgba(0,0,0,0.1);
-    } 
+    } */
 
     .App-intro {
       font-size: 1.5em;
