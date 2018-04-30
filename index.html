@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="img/localcorps.ico">
+   
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    
+    
+    <title>Local Corps</title>
+  </head>
+  <body>
+
+        <div class="App" id="home">
+                <nav class="App-nav">
+                  <img src="img/localcorpslogo1.png" class="App-logo" alt="logo" />
+                  
+                  <ul>
+                    <!-- {/* <li><a href="#" data-toggle="modal" data-target="#signinModal">Sign In</a></li> */} -->
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- {/* <li><a href="#about">About</a></li> */}
+                    {/* <li><a href="#home">Home</a></li> */}  -->
+                  </ul>
+                </nav>
+                
+                <header class="App-header">
+        
+                  
+                    <!-- {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
+                      Sign Up
+                    </button> */} -->
+                  <div class="overlay">
+                    <p class="App-intro"> Connect. Report. Reach Out. </p>
+                  </div>
+                  
+        
+                  <!-- {/* sign up modal */} -->
+                  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="modal-title" id="signupModalLabel">Sign up to become a volunteer today!</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          
+                        </div>
+                        <div class="modal-body">
+        
+                          <div className="form-group">
+                             <label for="usr">Name:</label>
+                             <input type="text" class="form-control" id="usr"/> 
+                          </div>
+        
+                          <div className="form-group">
+                             <label for="usr">Email:</label>
+                             <input type="text" class="form-control" id="usr"/> 
+                          </div>
+        
+                          <div className="form-group">
+                             <label for="usr">Password:</label>
+                             <input type="text" class="form-control" id="usr"/> 
+                          </div>
+        
+                          <p><a href="#" className="links" data-toggle="modal" data-target="#signinModal" data-dismiss="modal">Already a member? Login here!</a></p>
+                          <button type="button" class="btn btn-primary" id="submitmodal" data-dismiss="modal">Submit</button>
+        
+                        </div>
+                        <!-- {/* <div className="modal-footer">
+                          {/* <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> */}
+                          {/* <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                        </div> */}  -->
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- {/* sign in modal */} -->
+                  <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="modal-title" id="signinModalLabel">Sign In!</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          
+                        </div>
+                        <div class="modal-body">
+        
+                          <div class="form-group">
+                             <label for="usr">Email:</label>
+                             <input type="text" class="form-control" id="usr"/> 
+                          </div>
+        
+                          <div class="form-group">
+                             <label for="usr">Password:</label>
+                             <input type="text" class="form-control" id="usr"/> 
+                          </div>
+        
+                          <p><a href="#" class="links" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Not a member yet? Sign Up here!</a></p>
+                          <button type="button" class="btn btn-primary" id="submitmodal" data-dismiss="modal">Submit</button>
+                        
+                        </div>
+                        <!-- {/* <div className="modal-footer">
+                          {/* <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> */}
+                          {/* <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                        </div> */}  -->
+                      </div>
+                    </div>
+                  </div>
+                </header>
+        
+                
+                <br/>
+                <br/>
+        
+                <div class="App-about" id="about">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-10">
+                        <h2>What is Local Corps?</h2>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-5">  
+                        <!-- {/* <h4>What is Local Corps?</h4> */} -->
+                        <p>Local Corps was founded in 2016 in response to the tragic shootings that occurred at the Pulse nightclub in Orlando, FL. Our goal is to help neighborhoods bring a sense of safety back to their communities.</p>
+                        <p>Local Corps is a community alert application that turns the idea of the neighborhood watch into a real-time communication hub for nearby residents and local authorities. </p>
+                      </div>
+                      <div class="col-lg-5">
+                        <!-- {/* <h4>How to help</h4> */} -->
+                        <p>Local Corps is a new style of the neighborhood watch. Property managers and HOAs are in charge of their communities boards.  Residents are able to report the suspicious activity they see on the application and get an immediate response from the appropriate parties. </p>
+
+                        <!-- {/* <h4>Receive Alerts First!</h4> */} -->
+                        <p>Local Corps members are volunteering to look out for each other, be aware of their surroundings, and reach out and notify when something isn't right.</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="App-contact" id="contact">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <h2>Contact</h2>
+                      </div>
+                      <div class="col-lg-12">
+                          <p>For more information about Local Corps please send an email to: </p>
+                          <p><a href="mailto:localcorps@gmail.com">localcorps@gmail.com</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="App-footer">
+                  <p>&copy; 2018 Local Corps</p>
+                </div>
+                
+              </div>
+    <!-- <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript> -->
+    <!-- <div id="root"></div> -->
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
