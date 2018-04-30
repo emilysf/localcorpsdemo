@@ -30,7 +30,7 @@ p {
 }
 
 .App-nav {
-  background: rgba(249, 249, 249);
+  background: rgba(249, 249, 249) !important;
   height: 70px;
   top: 0;
   right: 0;
@@ -53,7 +53,7 @@ p {
 
     li a {
       display: block;
-      color: #1C5D99;
+      color: #1C5D99 !important;
       text-align: center;
       padding: 24px 16px;
       text-decoration: none;
@@ -62,7 +62,7 @@ p {
     li a:hover {
       background-color: #f9f9f9;
       text-decoration: none;
-      color: #FFB916;
+      color: #FFB916 !important;
       height: 70px;
     }
 
@@ -72,19 +72,19 @@ p {
       margin-left:80px;
     }
 
-    .App-title {
+    /*.App-title {
       font-size: 2em;
       color: #0095a8;
       float: left;
       padding: 15px 10px;
-    }
+    }*/
 
 .App-header {
   background: url(./img/orlando_stock_image2.jpg) center no-repeat;
   height: 580px;
   width: 100%;
   color: #2C3E50;
-  margin-top: 6%;
+  margin-top: 5.5%;
 }
     
    .overlay {
