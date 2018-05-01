@@ -84,9 +84,6 @@ p {
     .App-title {
       font-size: 1.5em;
       color: #FFB916;
-      float: left;
-      padding: 15px 10px;
-      margin-left: 13%;
     }
 
 .App-header {
@@ -217,6 +214,5 @@ p {
   .App-footer p {
     padding-top: 35px;
   }
-
 
 
